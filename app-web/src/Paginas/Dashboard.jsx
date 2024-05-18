@@ -7,12 +7,9 @@ const Dashboard = () => {
         <>
             <NavBar/>
             <div className="container">
-            
                 <div>
-                    <h1>Bienvenido! {auth.user}</h1>
-                    <button onClick={() => auth.logOut()} className="btn-submit">
-                    Cerrar sesión
-                    </button>
+                    
+                
                 </div>
             </div>
         </>

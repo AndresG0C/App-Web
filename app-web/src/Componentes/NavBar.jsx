@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import { useAuth } from "../Componentes/AuthProvider";
+import "../Css/NavBar.css";
 
 const NavBar = ()=>{
     const auth = useAuth();
@@ -7,24 +8,28 @@ const NavBar = ()=>{
     return(
         <nav>
             <ul>
-                <li>
-                    <Link to="/">Login</Link>
+                <li className='link1'>
+                    <Link className="direccion" to="/">{auth.user}</Link>
                 </li>
 
-                <li>
-                    <Link to="/Dashboar">Inicio</Link>
+                <li className='l_concernet'>
+                    <Link className="direccion" to="/">ConcerNet</Link>
                 </li>
 
-                <li>
-                    <Link to="/Espacios">Espacios</Link>
+                <li className='link'>
+                    <Link onClick={() => auth.logOut()} className="direccion" > Salir</Link>
                 </li>
 
-                <li>
-                    <Link to="/AcercaDe">Acerca De</Link>
+                <li className='link'>
+                    <Link className="direccion" to="/AcercaDe">Acerca De</Link>
                 </li>
 
-                <li>
-                    <Link onClick={() => auth.logOut()} className="btn-submit" > Salir</Link>
+                <li className='link'>
+                    <Link className="direccion" to="/Espacios">Espacios</Link>
+                </li>
+
+                <li className='link'>
+                    <Link className="direccion" to="/Dashboard">Inicio</Link>
                 </li>
 
             </ul>

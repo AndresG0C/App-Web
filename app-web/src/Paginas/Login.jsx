@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Link} from 'react-router-dom';
 import { useAuth } from "../Componentes/AuthProvider";
 
 const Login = () => {
@@ -34,6 +35,14 @@ const Login = () => {
 
     return (
         <>
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/">ConcerNet</Link>
+                    </li>
+                </ul>
+            </nav>
+
             <div style={{ color: "red" }}>{mensaje}</div>
             <form onSubmit={handleSubmitEvent}>
                 <div className="form_control">
