@@ -1,0 +1,32 @@
+.link2, .link3 {
+    display: inline;
+    float: right;
+    right: 10px;
+    padding: 10px 20px 10px 0;
+}
+
+#Nav_AcercaDe {
+    padding: 0 40px 0 0;
+    display: block;
+}
+
+.link2 a, .link3 a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.link2 a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    transition: 0.5s ease;
+}
+
+.link3 a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    transition: 0.5s ease;
+}
