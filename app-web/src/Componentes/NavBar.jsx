@@ -9,11 +9,11 @@ const NavBar = ()=>{
         <nav>
             <ul>
                 <li className='link1'>
-                    <Link className="direccion" to="/">{auth.user}</Link>
+                    <Link className="direccion" to="/Dashboard">{auth.user}</Link>
                 </li>
 
                 <li className='l_concernet'>
-                    <Link className="direccion" to="/">ConcerNet</Link>
+                    <Link className="direccion" to="/Dashboard">ConcerNet</Link>
                 </li>
 
                 <li className='link'>

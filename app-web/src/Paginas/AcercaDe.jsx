@@ -13,16 +13,16 @@ const Espacios = () => {
             <nav>
                 <ul>
                     <li className='link1'>
-                        <Link className="direccion" to="/">{auth.user}</Link>
+                        <Link className="direccion" to="/AcercaDe">{auth.user}</Link>
                     </li>
 
                     <li className='l_concernet'>
-                        <Link className="direccion" to="/">ConcerNet</Link>
+                        <Link className="direccion" to="/AcercaDe">ConcerNet</Link>
                     </li>
 
                     <div id="Nav_AcercaDe">
                         <li className='link2'>
-                            <Link onClick={() => auth.logOut()} className="direccion" > Salir</Link>
+                            <Link onClick={() => auth.logOut()} to="/Login" className="direccion" > Salir</Link>
                         </li>
 
                         <li className='link3'>
