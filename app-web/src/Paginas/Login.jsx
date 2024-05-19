@@ -44,23 +44,25 @@ const Login = () => {
                 </ul>
             </nav>
 
-            <div className="container">
+            <div className="c_login">
                 <form onSubmit={handleSubmitEvent}>
                     <div className="form_control">
                         <h1 className="h1_iniciar"> Inicio de Sesión</h1>
                         <br/>
                         <label htmlFor="user-name"><b>Usuario: </b></label>
-                        <input type="text" id="user-name" name="username" aria-describedby="user-name" aria-invalid="false" placeholder="USUARIO" onChange={handleInput} />
-                        <div id="user-name" className="sr-only">
-                            (Andres)
+                        <br/>
+                        
+                        <div className="input">
+                        <input type="text" id="user-name" name="username" aria-describedby="user-name" aria-invalid="false" placeholder="Andres" onChange={handleInput} />
                         </div>
 
                         <br/>
                         
                         <label htmlFor="password"><b>Contraseña: </b></label>
-                        <input type="password" id="password" name="password" aria-describedby="user-password" aria-invalid="false" placeholder="CONTRASEÑA" onChange={handleInput} />
-                        <div id="user-password" className="sr-only">
-                        (Admin12345)
+                        <br/>
+
+                        <div className="input">
+                        <input type="password" id="password" name="password" aria-describedby="user-password" aria-invalid="false" placeholder="Admin12345" onChange={handleInput} />
                         </div>
                         
                         <br/>
