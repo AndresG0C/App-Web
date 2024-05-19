@@ -57,7 +57,7 @@
 }
 
 .c_login input {
-    width: 80%;
+    width: 76%;
     height: 130%;
     font-size: 18px;
 }
@@ -65,7 +65,7 @@
 .btn_submit {
     border-radius: 5px;
     font-size: 18px;
-    width: 83%;
+    width: 79%;
     height: 11%;
     transform: translate(14%, -40%);
     transition: 0.5s ease;
