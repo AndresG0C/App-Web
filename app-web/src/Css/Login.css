@@ -11,7 +11,6 @@
     display: inline;
     float: left;
     padding: 8px 0 8px 720px;
-    
 }
 
 .t_login a {
@@ -27,9 +26,8 @@
     position: absolute;
     left: 40%;
     top: 28%;
-    
     width: 330px;
-    height: 340px;
+    height: 350px;
     font-size: 20px;
     background: transparent;
     border: 3px solid rgba(255, 255, 255, .1);
@@ -67,7 +65,9 @@
 .btn_submit {
     border-radius: 5px;
     font-size: 18px;
-    transform: translate(80%, -70%);
+    width: 83%;
+    height: 11%;
+    transform: translate(14%, -40%);
     transition: 0.5s ease;
     cursor: pointer;
 }
