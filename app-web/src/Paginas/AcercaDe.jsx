@@ -17,7 +17,7 @@ const Espacios = () => {
                     </li>
 
                     <li className='l_concernet'>
-                        <Link className="direccion" to="/AcercaDe">ConcerNet</Link>
+                        <Link className="direccion" to="/AcercaDe">Acerca De</Link>
                     </li>
 
                     <div id="Nav_AcercaDe">

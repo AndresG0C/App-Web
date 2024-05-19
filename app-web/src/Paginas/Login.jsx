@@ -39,7 +39,7 @@ const Login = () => {
             <nav>
                 <ul>
                     <li className='t_login'>
-                        <Link className="direccion" to="/Espacios">ConcerNet</Link>
+                        <Link className="direccion" to="/Login">ConcerNet</Link>
                     </li>
                 </ul>
             </nav>

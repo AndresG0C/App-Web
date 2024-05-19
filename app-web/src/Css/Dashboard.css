@@ -1,7 +1,8 @@
 .container {
     background-color: rgba(21, 45, 105, 0.7);
     margin: 0;
-    border: 3px solid rgba(21, 45, 105, 0.7);
+    border: 2px solid rgba(21, 45, 105, 0.7);
+    height: 632px;
 }
 
 .infos {
@@ -32,7 +33,7 @@
     position: absolute;
     width: 30%;
     height: 48%;
-    right: 2.5%;
+    right: 2%;
     top: 22%;
     border-radius: 20px;
     transition: 0.5s ease;
@@ -46,7 +47,7 @@
     position: absolute;
     width: 26%;
     height: 55%;
-    left: 36.2%;
+    left: 36.4%;
     top: 17%;
     border: 3px solid black;
     border-radius: 20px;
