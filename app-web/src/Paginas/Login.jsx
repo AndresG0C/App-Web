@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {Link} from 'react-router-dom';
 import { useAuth } from "../Componentes/AuthProvider";
+import "../Css/Login.css";
 
 const Login = () => {
     const [input, setInput] = useState({
@@ -37,46 +38,40 @@ const Login = () => {
         <>
             <nav>
                 <ul>
-                    <li>
-                        <Link to="/">ConcerNet</Link>
+                    <li className='t_login'>
+                        <Link className="direccion" to="/Espacios">ConcerNet</Link>
                     </li>
                 </ul>
             </nav>
 
-            <div style={{ color: "red" }}>{mensaje}</div>
-            <form onSubmit={handleSubmitEvent}>
-                <div className="form_control">
-                    <label htmlFor="user-name">Usuario:</label>
-                    <input
-                    type="text"
-                    id="user-name"
-                    name="username"
-                    aria-describedby="user-name"
-                    aria-invalid="false"
-                    onChange={handleInput}
-                    />
-                    <div id="user-name" className="sr-only">
-                    Por favor ingrese un nombre de usuario válido (mínimo 6 caracteres).
-                    </div>
-                </div>
+            <div className="container">
+                <form onSubmit={handleSubmitEvent}>
+                    <div className="form_control">
+                        <h1 className="h1_iniciar"> Inicio de Sesión</h1>
+                        <br/>
+                        <label htmlFor="user-name"><b>Usuario: </b></label>
+                        <input type="text" id="user-name" name="username" aria-describedby="user-name" aria-invalid="false" placeholder="USUARIO" onChange={handleInput} />
+                        <div id="user-name" className="sr-only">
+                            (Andres)
+                        </div>
 
-                <div className="form_control">
-                    <label htmlFor="password">Contraseña:</label>
-                    <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    aria-describedby="user-password"
-                    aria-invalid="false"
-                    onChange={handleInput}
-                    />
-                    <div id="user-password" className="sr-only">
-                    Por favor ingrese una contraseña válida (mínimo 6 caracteres).
-                    </div>
-                </div>
+                        <br/>
+                        
+                        <label htmlFor="password"><b>Contraseña: </b></label>
+                        <input type="password" id="password" name="password" aria-describedby="user-password" aria-invalid="false" placeholder="CONTRASEÑA" onChange={handleInput} />
+                        <div id="user-password" className="sr-only">
+                        (Admin12345)
+                        </div>
+                        
+                        <br/>
+                        <div style={{ color: "white" }}>{mensaje}</div>
+                        <br/>
 
-                <button className="btn-submit">Iniciar sesión</button>
-            </form>
+                        <button className="btn_submit"><b>Iniciar sesión</b></button>
+                    </div>
+                    
+                </form>
+            </div>
         </>
     );
 };

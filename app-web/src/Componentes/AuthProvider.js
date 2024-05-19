@@ -9,7 +9,7 @@ const AuthProvider = ({ children }) => {
     const navigate = useNavigate();
 
     const loginAction = (data) => {
-        if (data.username === "admin" && data.password === "12345") {
+        if (data.username === "Andres" && data.password === "Admin12345") {
             setUser(data.username);
             setToken(data.password);
             localStorage.setItem("site", data.password);
